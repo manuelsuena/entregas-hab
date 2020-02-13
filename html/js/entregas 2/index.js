@@ -59,7 +59,7 @@ switch (option) {
   case "**":
     console.log(number1 ** number2);
     break;
-  case " ":
+  default:
     console.log("No has seleccionado una opción correcta");
     break;
 }
@@ -67,15 +67,53 @@ switch (option) {
 /*####################  Tercer ejercicio juego de dado hasta llegar a 50 punto */
 
 function dado() {
-  return Math.round(Math.random() * (6 - 1) + 1);
+  return Math.ceil(Math.random() * 6);
 }
-for (let i = dado(); i < 50; i = i + dado()) {
-  if (dado() >= 50) {
+
+let totalPuntos = 0;
+
+for (let i = 1; totalPuntos <= 50; i++) {
+  const numeroDado = dado();
+  totalPuntos += numeroDado;
+  if (totalPuntos < 50) {
     console.log(
-      `¡Enhorabuena, ha salido un ${dado()}! ¡Has ganado con un total de ${dado() +
-        i} puntos!`
+      `En la tirada ${i}, ha salido un ${numeroDado}. Tienes un total de ${totalPuntos}`
     );
   } else {
-    console.log(` Ha salido un ${dado()} . Tienes un total de ${i + dado()}`);
+    console.log(
+      `¡Enhorabuena, ha salido un ${numeroDado}! ¡Has ganado con un total de ${totalPuntos} puntos!`
+    );
   }
+}
+
+/* ###################  Ejercicio media de puntuación ######## */
+
+const maria = [62, 34, 55];
+const paula = [35, 60, 59];
+const rebeca = [40, 39, 63];
+
+function mediaPuntuacion(arrayEquipo) {
+  let totalPuntuacion = 0;
+  for (let i = 0; i < arrayEquipo.length; i++) {
+    totalPuntuacion += arrayEquipo[i];
+  }
+  return totalPuntuacion / arrayEquipo.length;
+}
+
+const mediaMaria = mediaPuntuacion(maria);
+const mediaPaula = mediaPuntuacion(paula);
+const mediaRebeca = mediaPuntuacion(rebeca);
+
+if (mediaMaria > mediaPaula && mediaMaria > mediaRebeca) {
+  console.log(
+    `El equipo de María tiene la media más alta. Un total de ${mediaMaria}`
+  );
+} else if (mediaPaula > mediaMaria && mediaPaula > mediaRebeca) {
+  console.log(
+    `El equipo de María tiene la media más alta. Un total de ${mediaPaula}`
+  );
+} else {
+  consoleconsole.log(
+    `El equipo de María tiene la media más alta. Un total de ${mediaRebeca}`
+  );
 }

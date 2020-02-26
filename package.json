@@ -1,24 +1,14 @@
 {
-  "name": "entregas-hab",
+  "name": "hackabos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server 'html' --files 'html'"
+    "start":  "browser-sync start --server 'www' --files 'www'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manuelsuena/entregas-hab.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/manuelsuena/entregas-hab/issues"
-  },
-  "homepage": "https://github.com/manuelsuena/entregas-hab#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7"
-  }
-}
+

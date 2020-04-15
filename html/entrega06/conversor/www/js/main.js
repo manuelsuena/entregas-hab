@@ -2,11 +2,14 @@
 
 const url = "https://api.exchangerate-api.com/v4/latest/EUR";
 
+// Seleccionar los elementos que luego se modificaran.
 const input = document.querySelector("input#tengo");
 const select = document.querySelector("select#divtengo");
 const selectout = document.querySelector("select#divquiero");
 const button = document.querySelector("button");
 const result = document.querySelector("p#quiero");
+
+// Función en la cual se le agregan las divisas a los selectores
 
 async function seleccionDivisa(url) {
   const response = await fetch(url);
@@ -27,7 +30,7 @@ async function seleccionDivisa(url) {
     selectout.append(option2);
   }
 }
-
+ // Función en la cual se hace  la conversión.
 async function conversionDivisa(evento) {
   let option1Div = select.value;
   let option2Div = selectout.value;
@@ -41,5 +44,6 @@ async function conversionDivisa(evento) {
   result.textContent = resultado;
 }
 
+// Es el evento que con el click se ejecuta la función de conversión.
 button.addEventListener("click", conversionDivisa);
 seleccionDivisa(url);

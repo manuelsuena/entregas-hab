@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  display: grid;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/imagenes/img.jpg");
+  margin-top: 8rem;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  color: blue;
+}
+main {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(224, 207, 207);
+  max-width: 100%;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: rgb(201, 222, 230);
+}
+
+input {
+  padding: 0.5rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+}
+select#quiero,
+p {
+  display: inline;
+}
+p {
+  padding: 0.5rem 7rem;
+  border: 1px solid rgb(143, 139, 139);
+  margin: 1rem;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+}

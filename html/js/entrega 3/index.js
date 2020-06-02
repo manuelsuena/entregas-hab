@@ -27,7 +27,14 @@ binario. Por ejemplo: si se pasa 101 el programa debe retornar un 5, si se pasa
 1000 debe retornar un 8, etc.Si no sabes como convertir un número binario a decimal. */
 
 let binari = "1000";
-let binariEnDecimal = parseInt(binari, 2);
+
+function BinaryConverter(str) {
+return str
+ .split("")
+  .reverse()
+  .map((value, index) => (value ? 2 ** index : 0))
+  .reduce((acumulador,current) => acumulator + current);
+}
 console.log(`el numero binario ${binari}, es en decimal ${binariEnDecimal}`);
 
 //  ########################## Ejercicio 3 ###########################

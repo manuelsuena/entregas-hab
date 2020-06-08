@@ -25,6 +25,7 @@ para asociar la variable search con los datos introducidos por el usuario-->
   :duration="item.duration"
   :url="item.url"
   > </TrackCustom>
+  <FooterCustom> </FooterCustom>
    </div>
 </template>
 
@@ -33,6 +34,7 @@ para asociar la variable search con los datos introducidos por el usuario-->
 import MenuCustom from '@/components/MenuCustom.vue'
 import TrackCustom from '@/components/TrackCustom.vue'
 import TitleCustom from '@/components/TitleCustom.vue'
+import FooterCustom from '@/components/FooterCustom.vue'
 import api from '@/api/index.js'
 
 // Colocamos el nombre al componente para su exportacion y en data se definen las variables y tipos 
@@ -43,6 +45,7 @@ export default {
    MenuCustom,
    TrackCustom,
     TitleCustom,
+    FooterCustom,
   },
       data(){
     return{

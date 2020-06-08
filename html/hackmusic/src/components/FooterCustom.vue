@@ -20,6 +20,7 @@ export default {
 <!--Estilo -->
 <style  scoped>
 p{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    color: white;
 }
 </style>

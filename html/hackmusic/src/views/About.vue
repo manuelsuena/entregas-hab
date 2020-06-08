@@ -25,6 +25,7 @@
        <a  href="https://www.last.fm/api/?lang=es&">API LAST FM</a>
 
       <a href="https://www.npmjs.com/package/axios">AXIOS</a>
+      <FooterCustom>     </FooterCustom> 
 
    </div>
 </template>
@@ -33,6 +34,7 @@
 /* Importamos los componentes que queremos utilizar en esta vista */
 import MenuCustom from '@/components/MenuCustom.vue'
 import TitleCustom from '@/components/TitleCustom.vue'
+import FooterCustom from '@/components/FooterCustom.vue'
 
 // Colocamos el nombre al componente para su exportacion y en data se definen las variables y tipos 
 //que se van a usar
@@ -41,6 +43,7 @@ export default {
   components: {
     MenuCustom,
     TitleCustom,
+    FooterCustom,
   },
       data(){
     return{

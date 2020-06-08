@@ -12,6 +12,7 @@
   :tagTaggings="item.taggings"
   :tagUrl="item.url"
   > </TagCustom>
+  <FooterCustom>  </FooterCustom> 
    </div>
 </template>
 
@@ -21,6 +22,7 @@ import MenuCustom from '@/components/MenuCustom.vue'
 import api from '@/api/index.js'
 import TagCustom from '@/components/TagCustom.vue'
 import TitleCustom from '@/components/TitleCustom.vue'
+import FooterCustom from '@/components/FooterCustom.vue'
 
 // Colocamos el nombre al componente para su exportacion y en data se definen las variables y tipos 
 //que se van a usar
@@ -30,6 +32,7 @@ export default {
     MenuCustom,
     TagCustom,
     TitleCustom,
+    FooterCustom,
   },
       data(){
     return{

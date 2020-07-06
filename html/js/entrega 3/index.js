@@ -26,16 +26,29 @@ console.log(`la palabra más larga es ${message}`);
 binario. Por ejemplo: si se pasa 101 el programa debe retornar un 5, si se pasa
 1000 debe retornar un 8, etc.Si no sabes como convertir un número binario a decimal. */
 
-let binari = "1000";
+let binary = prompt(' Número binario que se convertira a decimal.');
+function binaryConverterDecimal() {
+
+  numero = binary.split('');
+  let decimal = 0;
+  const numeroReverse = numero.reverse();
+  for (let i = 0; i < numeroReverse.length; i++) {
+    decimal += Math.pow(2, i) * numeroReverse[i];
+  }
+  alert('El resulatado es:  ' + decimal);
+}
+binaryConverterDecimal();
+
+/* let binari = "1000";
 
 function binariEnDecimal(str) {
 return str
  .split("")
   .reverse()
   .map((value, index) => (value ? 2 ** index : 0))
-  .reduce((acumulador,current) => acumulator + current);
+  .reduce((acumulator,current) => acumulator + current);
 }
-console.log(`el numero binario ${binari}, es en decimal ${binariEnDecimal(binari)}`);
+console.log(`el numero binario ${binari}, es en decimal ${binariEnDecimal(binari)}`); */
 
 //  ########################## Ejercicio 3 ###########################
 

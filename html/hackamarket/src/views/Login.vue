@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
 
          <!-- Se aplica el cambio de nombre-->
        <vue-headful title="Login"
@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style scoped>
+
 input{
     padding: 0.7rem;
     margin: 1rem;

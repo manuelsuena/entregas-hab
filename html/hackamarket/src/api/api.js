@@ -25,9 +25,9 @@ app.set('llave', config.llave)
 // Datos de conexión a la BBDD
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: '',
-    password: '',
-    database: '',
+    user: 'manuel',
+    password: '18276424',
+    database: 'hackamarket',
 });
 
 connection.connect(error =>{
